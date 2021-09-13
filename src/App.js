@@ -1,4 +1,5 @@
 import React from "react";
+import Square from "./Square";
 
 import Crossword from "@jaredreisinger/react-crossword";
 
@@ -22,7 +23,7 @@ const data = {
 };
 
 const App = () => {
-	return<div> <Crossword data={data} /> </div>;
+	return<div> <Square/> </div>;
 }
 
 export default App;
