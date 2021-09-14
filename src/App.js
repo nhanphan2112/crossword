@@ -1,5 +1,6 @@
 import React from "react";
 import Square from "./Square";
+import SquareContainer from "./SquareContainer";
 
 import Crossword from "@jaredreisinger/react-crossword";
 
@@ -23,7 +24,7 @@ const data = {
 };
 
 const App = () => {
-	return<div> <Square/> </div>;
+	return<div> <SquareContainer/> </div>;
 }
 
 export default App;
