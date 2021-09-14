@@ -12,18 +12,28 @@
   text-align: center;
   width: 34px;
 
-  
 }
 
-* {
-  box-sizing: border-box;
+.blacksquare {
+  background: #000;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+
 }
+
+
 
 .grid-board {
   display: grid;
-  /* grid-template-columns: auto;
-  grid-template-rows:auto; */
-  /* grid-template-columns: repeat(15, var(--tile-size)); */
   grid-template-columns: repeat(15, 34px);
   grid-gap: 0;
   align-self: flex-start;
