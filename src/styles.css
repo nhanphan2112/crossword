@@ -30,8 +30,6 @@
 
 }
 
-
-
 .grid-board {
   display: grid;
   grid-template-columns: repeat(15, 34px);
@@ -39,10 +37,23 @@
   align-self: flex-start;
 }
 
-  /* Numbers define values that will be used throughout the CSS.
-  --tile-size: 20px for example will set size of the grid squares. */
-  :root{--cols: 15;
-  --rows: 15;
-  --tile-size: 20px;
-  --border-width: 5px;
-  }
+
+.placeholder
+{
+    position: relative;
+    font-size: 0.7em;
+}
+
+.placeholder::after
+{
+    position: absolute;
+    left: 5px;
+    top: 3px;
+    content: attr(data-placeholder);
+    pointer-events: none;
+    
+}
+
+
+
+

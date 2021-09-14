@@ -6,7 +6,11 @@ const renderCell = (cell) => {
 		return <button className="blacksquare"></button>;
 	}
 
-	return <input className="square" maxLength="1" placeholder={cell.number}></input>;
+	return (
+		<div className="placeholder" data-placeholder={cell.number}>
+			<input className="square" maxLength="1"></input>
+		</div>
+	);
 };
 
 const Cell = ({ cell }) => {
