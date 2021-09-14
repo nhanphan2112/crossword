@@ -1,11 +1,8 @@
 import React from "react";
 import "./styles.css";
 import Cell from "./Cell";
-import crossWordData from "./data.json";
 
-const cells = crossWordData.cells;
-
-const Grid = () => {
+const Grid = ({ cells }) => {
 	const grid = [];
 
 	for (let row = 0; row < 15; row++) {
