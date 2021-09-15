@@ -1,4 +1,5 @@
 import React from "react";
+import "./styles.css";
 import ClueList from "./ClueList";
 
 
@@ -9,11 +10,11 @@ const ClueView = ({ clues }) => {
 	
 	return (
 		<React.Fragment>
-			<h3>Across</h3>
-      <ClueList clues={acrossClues}/>
+			<h4>Across</h4>
+      <div className="cluelist"><ClueList clues={acrossClues}/></div>
 
-			<h3>Down</h3>
-      <ClueList clues={downClues}/>
+			<h4>Down</h4>
+      <div className="cluelist"><ClueList clues={downClues}/></div>
 		</React.Fragment>
 	);
 };
