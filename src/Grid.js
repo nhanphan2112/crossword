@@ -12,12 +12,9 @@ const Grid = ({ cells }) => {
 		}
 	}
 
-	return (
-		<div>
-			<div className="grid-board">{grid}</div>
-    
-		</div>
-	);
+	return <div className="grid-board">{grid}</div>;
+
+  
 };
 
 export default Grid;
