@@ -14,6 +14,7 @@ const App = () => {
       <ClueView clues={clues}/>
       <br style={{clear:"both"}} />
       <p>{meta.title} | {meta.creator}</p>
+      <h3><b>Your answer is corrected if the square turn GREEN</b></h3>
 		</div>
 	);
 };

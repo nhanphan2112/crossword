@@ -22,7 +22,7 @@ const renderCell = (cell, bgColor, changeBGColor) => {
 			<input className="square" 
               maxLength="1" 
               style={{backgroundColor: bgColor}}
-              onClick={()=> changeBGColor("#FFF595")}
+              onFocus={()=> changeBGColor("#FFF595")}
               onBlur={(e) => {handleChange(e, changeBGColor, cell)}}
               // onChange={(e) => {handleChange(e, changeBGColor, cell)}}
       >
