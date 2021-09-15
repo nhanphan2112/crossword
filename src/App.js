@@ -11,8 +11,9 @@ const App = () => {
 	return (
 		<div>
 			<Grid cells={cells} />
-      <p>{meta.creator}</p>
       <ClueView clues={clues}/>
+      <br style={{clear:"both"}} />
+      <p>{meta.title} | {meta.creator}</p>
 		</div>
 	);
 };
