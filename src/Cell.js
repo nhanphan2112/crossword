@@ -3,7 +3,6 @@ import "./styles.css";
 
 
 
-
 const Cell = ({ cell }) => {
   const [bgColor, changeBGColor] = useState("#fff");
 
@@ -14,7 +13,6 @@ const Cell = ({ cell }) => {
 
 
 const renderCell = (cell, bgColor, changeBGColor) => {
-
 	if (cell.type) {
 		return <button className="blacksquare"></button>;
 	}
@@ -24,16 +22,25 @@ const renderCell = (cell, bgColor, changeBGColor) => {
 			<input className="square" 
               maxLength="1" 
               style={{backgroundColor: bgColor}}
-              onClick={()=> changeBGColor("yellow")}
-              onChange={handleChange}
+              onClick={()=> changeBGColor("#FFF595")}
+              onBlur={(e) => {handleChange(e, changeBGColor, cell)}}
+              // onChange={(e) => {handleChange(e, changeBGColor, cell)}}
       >
       </input>
 		</div>
 	);
 };
 
-const handleChange = () => {
-  console.log("change");
+
+const handleChange = (e, changeBGColor, cell) => {
+  const userInput = e.target.value.toUpperCase();
+  console.log(userInput);
+  if(userInput === cell.solution ){
+    changeBGColor('#BFF4BF');
+  }
+  else{
+    changeBGColor('white');
+  }
 }
 
 
